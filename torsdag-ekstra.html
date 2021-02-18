@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .item {
+            padding: 1rem;
+        }
+
+        .item:nth-child(odd) {
+            background-color: aqua;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .item:nth-child(even) {
+            background-color: grey;
+            color: gold;
+            border: 2px solid gold;
+            grid-column: span 3;
+        }
+
+        @media (min-width:679px) {
+            .item:nth-child(4n+3) {
+                grid-column: 4;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-flow: dense;
+                grid-gap: 1rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div><div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+<div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+<div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+<div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+<div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+<div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+<div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+<div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+<div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum. Donec faucibus, est vitae vehicula interdum, mi elit varius nulla, at luctus lorem ligula non neque. Curabitur et nisi vitae massa venenatis pharetra sed eu odio. Ut est lacus, pretium quis dignissim eu, interdum sed ipsum. Etiam non scelerisque ante. Praesent metus mauris, tempus ut eros vel, condimentum varius urna. Vivamus auctor velit quis tortor congue luctus.</div>
+<div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac egestas ante. Fusce molestie leo nec vestibulum rutrum.</div>
+    </main>
+</body>
+
+</html>
